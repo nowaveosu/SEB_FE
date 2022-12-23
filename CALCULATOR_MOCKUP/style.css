@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    border : 1px solid red;
+    height : 100vh;
+    margin : 0;
+    padding : 0;
+}
+.calculator{
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgb(122, 206, 122);
+    border-radius : 20px;
+    background-color: rgb(122, 206, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.box1{
+    background-color: white;
+    width: 310px;
+    height: 100px;
+    margin: 10px 10px 0px 10px;
+    border-radius : 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.box2{
+    background-color: white;
+    width: 310px;
+    height: 360px;
+    margin: 8px 10px 10px 10px;
+    border-radius : 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.miniBox{
+    display: flex;
+    background-color: aquamarine;
+    border-radius : 10px;
+    width: 280px;
+    height: 100px;
+    margin : 10px;
+    flex-direction: center;
+}
+.confirm{
+    background-color: greenyellow;
+    border-radius : 10px;
+    width: 50px;
+    height: 40px;
+    margin : 6px;
+}
+.num{
+    background-color: gainsboro;
+    border-radius : 10px;
+    width: 50px;
+    height: 40px;
+    margin : 6px;
+    flex-grow : 1;
+}
+.operator{
+    background-color: black;
+    border-radius : 10px;
+    color: white;
+    width: 50px;
+    height: 40px;
+    margin : 6px;
+   
+}
+.zero{
+    background-color: gainsboro;
+    border-radius : 10px;
+    width: 190px;
+    height: 40px;
+    margin : 6px;
+   
+}
