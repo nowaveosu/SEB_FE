@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
+    
 }
 
 body {
@@ -9,20 +8,20 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
+    border : 1px solid red;
     height : 100vh;
     margin : 0;
     padding : 0;
     background-image: url('https://mblogthumb-phinf.pstatic.net/MjAxODAzMTBfMjUw/MDAxNTIwNjA4MjM2NzAx.M0rjer5hC7K4A_UEj7YjcsLtahQRPvRw4G9oiJzGckEg.pFjyI_eJ2Vw0NEb8JJPlB2SKdpm5K0_5YfoGuvZhgmog.GIF.ertyupoq/9c3ad559f203d3e450cdefce9e6ca4d3.gif?type=w2'); 
     background-size : cover;
 }
-
 .calculator{
-    width: 600px;
-    height: 700px;
-    
-    border-radius : 60% 60% 40% 40% ;
-    background-image : url(http://www.apparelnews.co.kr/upfiles/manage/202206/4fd7f2bdcc5d78098b6dcea358cf2af7.jpg);
-    background-size : contain;
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgb(122, 206, 122);
+    border-radius : 20px;
+    background-color: rgb(122, 206, 122);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,20 +31,18 @@ body {
 
 .box1{
     background-color: white;
-    width: 290px;
-    height: 290px;
+    width: 310px;
+    height: 100px;
     margin: 10px 10px 0px 10px;
     border-radius : 10px;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    background-image: url(https://velog.velcdn.com/images/nowaveosu/post/90eccb91-c84d-4ea5-bcbd-0d9b5fd9d5c3/image.jpg);
-    background-size : 100% 100%;
 }
 .box2{
-    background-color: #FBE5E7;
-    width: 290px;
-    height: 300px;
+    background-color: white;
+    width: 310px;
+    height: 360px;
     margin: 8px 10px 10px 10px;
     border-radius : 10px;
     display: flex;
@@ -54,24 +51,24 @@ body {
 }
 .miniBox{
     display: flex;
-    background-color: #D6ABFA;
+    background-color: aquamarine;
     border-radius : 10px;
     width: 280px;
     height: 100px;
-    margin : 2px;
+    margin : 10px;
     flex-direction: row;
 }
 .confirm{
-    background-color: #A77FFF;
-    border-radius : 30px;
+    background-color: greenyellow;
+    border-radius : 10px;
     width: 50px;
     height: 40px;
     margin : 6px;
     flex-grow : 1;
 }
 .num{
-    background-color: #FFC0CB;
-    border-radius : 30px;
+    background-color: gainsboro;
+    border-radius : 10px;
     width: 50px;
     height: 40px;
     margin : 6px;
@@ -79,7 +76,7 @@ body {
 }
 .operator{
     background-color: black;
-    border-radius : 30px;
+    border-radius : 10px;
     color: white;
     width: 50px;
     height: 40px;
@@ -87,10 +84,10 @@ body {
    
 }
 .zero{
-    background-color: #FFC0CB;
-    border-radius : 30px;
-    width: 50px;
+    background-color: gainsboro;
+    border-radius : 10px;
+    width: 190px;
     height: 40px;
     margin : 6px;
-    flex-grow : 10;
+   
 }
