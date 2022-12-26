@@ -1,8 +1,10 @@
 main {
     display: flex;
     border: 1px dotted red;
-    flex-wrap : wrap;
-    justify-content: flex-start;
+    flex-direction: row;      /*자식 가로세로정해주기*/
+    align-items: flex-end;             /*자식 문단정렬*/
+    flex-wrap : wrap-reverse;            /*자식 줄바꿈여부*/
+    justify-content: flex-start;     /*자식요소 크게 좌우정렬*/
   }
   
 div {
