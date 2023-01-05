@@ -1,23 +1,31 @@
 console.log('leehi?')
 
 let elInputUsername = document.querySelector('#username') //id값을 쿼리
-console.log(elInputUsername)
-
-elInputUsername.value = '김코딩'
+//console.log(elInputUsername)
+// <div class="failure-message hide">아이디는 네 글자 이상이어야 합니다</div>
+//elInputUsername.value = '김코딩'
 //dom으로 html을 js세계로 끌고온다.
 let elFailureMessage = document.querySelector('.failure-message')
-let elSuccessMessage
+let elSuccessMessage = document.querySelector('.success-message')
 
-elFailureMessage.classList.remove('hide')
+console.log(elFailureMessage)
 
 elInputUsername.onkeyup = function(){//키보드가 눌렸을때
     console.log(elInputUsername.value)
 
     if(isMoreThan4Length(elInputUsername.value)){
-        console.log('4글자보다큼')
+        //성공메시지가 보여야함
+        elSuccessMessage.classList.remove('hide')
+        //실패 메시지가 가려져야 함
+        elFailureMessage.classList.add('hide')
+        
     }
     else{
-        console.log('짧음')
+        //성공메시지가 가려져야함
+        elSuccessMessage.classList.add('hide')
+
+        //실패메시지가 보여야함
+        elFailureMessage.classList.remove('hide')
     }
 }
 function isMoreThan4Length(value){
@@ -39,3 +47,6 @@ function isMoreThan4Length(value){
 //아이디 입력창에 글자를 키보드로 입력할때 > 이벤트를 이용
 //글자수가 4개 이상이면
 //사용할수있는 아이디입니다 메시지가 출력됩니다.
+
+//비밀번호 일치 뜨는지 해봐라.
+// 도전과제 통해 dom event 잘 이해해봐라!
